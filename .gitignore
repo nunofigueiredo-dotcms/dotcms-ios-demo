@@ -1,0 +1,30 @@
+# Secrets — never commit
+Config.plist
+*.local.xcconfig
+*.xcconfig.local
+secrets.json
+.env
+.env.*
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+DerivedData/
+build/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# SwiftPM
+.swiftpm/
+.build/
+Packages/
+
+# Apollo codegen artifacts that should not be reviewed by hand
+apollo-codegen-config.local.json
+
+# macOS
+.DS_Store

@@ -1,0 +1,1500 @@
+# GENERATED FILE - do not edit by hand.
+# Regenerate with Scripts/download-schema.sh
+
+schema {
+  query: Query
+}
+
+interface ContentBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface DotAssetBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  asset(render: Boolean = null): DotBinary
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface FileBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  fileAsset(render: Boolean = null): DotBinary
+  fileName(render: Boolean = null): String
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hostFolder(render: Boolean = null): DotSiteOrFolder
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  metaData(render: Boolean = null): [DotKeyValue]
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface FormBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface KeyValueBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  key(render: Boolean = null): String
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  value(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface PageBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hostFolder(render: Boolean = null): DotSiteOrFolder
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  template(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  url(render: Boolean = null): String
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface PersonaBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hostFolder(render: Boolean = null): DotSiteOrFolder
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  keyTag(render: Boolean = null): String
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  name(render: Boolean = null): String
+  owner(render: Boolean = null): DotUser
+  photo(render: Boolean = null): DotBinary
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  tags(render: Boolean = null): [String]
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface VanityURLBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  action(render: Boolean = null): String
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  forwardTo(render: Boolean = null): String
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  order(render: Boolean = null): Int
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  site(render: Boolean = null): DotSiteOrFolder
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  uri(render: Boolean = null): String
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+interface WidgetBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCode(render: Boolean = null): String
+  widgetTitle(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type Author implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  blogs(limit: Int, offset: Int, query: String, sortBy: String): [Blog]
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  email(render: Boolean = null): String
+  firstName(render: Boolean = null): String!
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  image(render: Boolean = null): DotBinary
+  inode(render: Boolean = null): ID
+  lastName(render: Boolean = null): String!
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Banner implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  buttonText(render: Boolean = null): String
+  caption(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  expireDate(render: Boolean = null): String
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  image(render: Boolean = null): DotBinary!
+  inode(render: Boolean = null): ID
+  link(render: Boolean = null): String
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  target(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type BannerCarousel implements DotContentlet & WidgetBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  banners(limit: Int, offset: Int, query: String, sortBy: String): [Banner]
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCode(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  widgetPreexecute(render: Boolean = null): String
+  widgetTitle(render: Boolean = null): String!
+  widgetUsage(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type Blog implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  author(limit: Int, offset: Int, query: String, sortBy: String): [Author]
+  baseType(render: Boolean = null): String
+  body(render: Boolean = null): DotStoryBlock
+  canonicalUrl(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  description(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  image(render: Boolean = null): DotBinary
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  metaDescription(render: Boolean = null): String
+  metaDescriptionCount(render: Boolean = null): String
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  ogDescription(render: Boolean = null): String
+  ogDescriptionCount(render: Boolean = null): String
+  ogImage(render: Boolean = null): DotFileasset
+  ogPreview(render: Boolean = null): String
+  ogTitle(render: Boolean = null): String
+  ogType(render: Boolean = null): String
+  owner(render: Boolean = null): DotUser
+  pageTitle(render: Boolean = null): String
+  pageTitleCount(render: Boolean = null): String
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  searchEngines(render: Boolean = null): String
+  searchEnginesIndex(render: Boolean = null): [String]
+  seo(render: Boolean = null): String
+  site(render: Boolean = null): DotSiteOrFolder!
+  sitemap(render: Boolean = null): String
+  sitemap1(render: Boolean = null): [String]
+  sitemapImportance(render: Boolean = null): String
+  social(render: Boolean = null): String
+  tags(render: Boolean = null): [String]
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  urlTitle(render: Boolean = null): String!
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type BlogList implements DotContentlet & WidgetBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  quantity(render: Boolean = null): Int
+  show(render: Boolean = null): [String]
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCode(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  widgetPreexecute(render: Boolean = null): String
+  widgetTitle(render: Boolean = null): String!
+  widgetUsage(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type CallToAction implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  buttonText1(render: Boolean = null): String
+  buttonText2(render: Boolean = null): String
+  buttonUrl1(render: Boolean = null): String
+  buttonUrl2(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  subHeading(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Doctor implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  acceptingPatients(render: Boolean = null): [String]
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  bio(render: Boolean = null): DotStoryBlock
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  credentials(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  languages(render: Boolean = null): String
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  phone(render: Boolean = null): String
+  photo(render: Boolean = null): DotBinary
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  specialty(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  urlTitle(render: Boolean = null): String!
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type DotAsset implements DotAssetBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  asset(render: Boolean = null): DotBinary!
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hostFolder(render: Boolean = null): DotSiteOrFolder
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  tags(render: Boolean = null): [String]
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type DotBinary {
+  focalPoint(render: Boolean = null): String
+  height(render: Boolean = null): Long
+  idPath(render: Boolean = null): String
+  isImage(render: Boolean = null): Boolean
+  mime(render: Boolean = null): String
+  modDate(render: Boolean = null): Long
+  name(render: Boolean = null): String
+  path(render: Boolean = null): String
+  sha256(render: Boolean = null): String
+  size(render: Boolean = null): Long
+  title(render: Boolean = null): String
+  versionPath(render: Boolean = null): String
+  width(render: Boolean = null): Long
+}
+
+type DotCategory {
+  active(render: Boolean = null): Boolean
+  inode(render: Boolean = null): ID
+  key(render: Boolean = null): String
+  keywords(render: Boolean = null): String
+  name(render: Boolean = null): String
+  velocityVar(render: Boolean = null): String
+}
+
+type DotFileasset {
+  description(render: Boolean = null): String
+  fileAsset(render: Boolean = null): DotBinary
+  fileName(render: Boolean = null): String
+  metaData(render: Boolean = null): [DotKeyValue]
+  showOnMenu(render: Boolean = null): [String]
+  sortOrder(render: Boolean = null): Int
+}
+
+type DotFolder {
+  folderDefaultFileType(render: Boolean = null): String
+  folderFileMask(render: Boolean = null): String
+  folderId(render: Boolean = null): String
+  folderName(render: Boolean = null): String
+  folderPath(render: Boolean = null): String
+  folderSortOrder(render: Boolean = null): Int
+  folderTitle(render: Boolean = null): String
+}
+
+type DotFolderCollectionItem {
+  children(render: Boolean = null): [DotFolderCollectionItem]
+  folderDefaultFileType(render: Boolean = null): String
+  folderFileMask(render: Boolean = null): String
+  folderId(render: Boolean = null): String
+  folderName(render: Boolean = null): String
+  folderPath(render: Boolean = null): String
+  folderSortOrder(render: Boolean = null): Int
+  folderTitle(render: Boolean = null): String
+}
+
+type DotKeyValue {
+  key(render: Boolean = null): String
+  value(render: Boolean = null): String
+}
+
+type DotLanguage {
+  country(render: Boolean = null): String
+  countryCode(render: Boolean = null): String
+  id(render: Boolean = null): Long
+  language(render: Boolean = null): String
+  languageCode(render: Boolean = null): String
+}
+
+type DotNavigation {
+  children(render: Boolean = null): [DotNavigation]
+  code(render: Boolean = null): String
+  folder(render: Boolean = null): String
+  hash(render: Boolean = null): Int
+  host(render: Boolean = null): String
+  href(render: Boolean = null): String
+  languageId(render: Boolean = null): Int
+  order(render: Boolean = null): Int
+  target(render: Boolean = null): String
+  title(render: Boolean = null): String
+  type(render: Boolean = null): String
+}
+
+type DotPage {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  cachettl(render: Boolean = null): String
+  canEdit(render: Boolean = null): Boolean
+  canLock(render: Boolean = null): Boolean
+  canRead(render: Boolean = null): Boolean
+  canSeeRules(render: Boolean = null): Boolean
+  conLanguage(render: Boolean = null): DotLanguage
+  containers(render: Boolean = null): [DotPageContainer]
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  deleted(render: Boolean = null): Boolean
+  description(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  extension(render: Boolean = null): String
+  folder(render: Boolean = null): DotFolder
+  friendlyName(render: Boolean = null): String
+  hasLiveVersion(render: Boolean = null): Boolean
+  hasTitleImage(render: Boolean = null): Boolean
+  host(render: Boolean = null): DotSite
+  httpsRequired(render: Boolean = null): Boolean
+  icon(render: Boolean = null): String
+  identifier(render: Boolean = null): ID
+  image(render: Boolean = null): String
+  imageContentAsset(render: Boolean = null): String
+  imageVersion(render: Boolean = null): String
+  inode(render: Boolean = null): ID
+  isContentlet(render: Boolean = null): Boolean
+  layout(render: Boolean = null): DotPageLayout
+  live(render: Boolean = null): Boolean
+  liveInode(render: Boolean = null): String
+  locked(render: Boolean = null): Boolean
+  lockedBy(render: Boolean = null): String
+  lockedByName(render: Boolean = null): String
+  mimeType(render: Boolean = null): String
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  name(render: Boolean = null): String
+  numberContents(render: Boolean = null): Int
+  owner(render: Boolean = null): DotUser
+  page(render: Boolean = null): DotContentlet
+  pageURI(render: Boolean = null): String
+  pageUrl(render: Boolean = null): String
+  path(render: Boolean = null): String
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  render(render: Boolean = null): String
+  runningExperimentId(render: Boolean = null): String
+  seoTitle(render: Boolean = null): String
+  seodescription(render: Boolean = null): String
+  shortDescription(render: Boolean = null): String
+  shortyLive(render: Boolean = null): String
+  shortyWorking(render: Boolean = null): String
+  sortOrder(render: Boolean = null): Long
+  stInode(render: Boolean = null): String
+  statusIcons(render: Boolean = null): String
+  styleEditorSchemas(render: Boolean = null): [JSON]
+  tags(render: Boolean = null): String
+  template(render: Boolean = null): DotPageTemplate
+  templateIdentifier(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  type(render: Boolean = null): String
+  url(render: Boolean = null): String
+  urlContentMap(render: Boolean = null): DotContentlet
+  urlMap(render: Boolean = null): String
+  vanityUrl(render: Boolean = null): DotPageVanityURL
+  viewAs(render: Boolean = null): DotPageViewAs
+  wfExpireDate(render: Boolean = null): String
+  wfExpireTime(render: Boolean = null): String
+  wfNeverExpire(render: Boolean = null): String
+  wfPublishDate(render: Boolean = null): String
+  wfPublishTime(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+  workingInode(render: Boolean = null): String
+}
+
+type DotPageBody {
+  rows(render: Boolean = null): [DotPageLayoutRow]
+}
+
+type DotPageBrowserVersion {
+  majorVersion(render: Boolean = null): String
+  minorVersion(render: Boolean = null): String
+  version(render: Boolean = null): String
+}
+
+type DotPageContainer {
+  archived(render: Boolean = null): Boolean
+  categoryId(render: Boolean = null): String
+  containerContentlets(render: Boolean = null): [DotPageContainerContentlets]
+  containerStructures(render: Boolean = null): [DotPageContainerStructure]
+  deleted(render: Boolean = null): Boolean
+  friendlyName(render: Boolean = null): String
+  host(render: Boolean = null): DotSite
+  iDate(render: Boolean = null): String
+  idate(render: Boolean = null): String
+  identifier(render: Boolean = null): String
+  inode(render: Boolean = null): String
+  languageId(render: Boolean = null): Long
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  luceneQuery(render: Boolean = null): String
+  maxContentlets(render: Boolean = null): Int
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  name(render: Boolean = null): String
+  new(render: Boolean = null): Boolean
+  notes(render: Boolean = null): String
+  owner(render: Boolean = null): DotUser
+  parentPermissionable(render: Boolean = null): DotSite
+  path(render: Boolean = null): String
+  permissionId(render: Boolean = null): String
+  permissionType(render: Boolean = null): String
+  postLoop(render: Boolean = null): String
+  preLoop(render: Boolean = null): String
+  rendered(render: Boolean = null): [DotPageRenderedContainer]
+  showOnMenu(render: Boolean = null): Boolean
+  sortOrder(render: Boolean = null): Int
+  source(render: Boolean = null): String
+  staticify(render: Boolean = null): Boolean
+  title(render: Boolean = null): String
+  type(render: Boolean = null): String
+  useDiv(render: Boolean = null): Boolean
+  versionId(render: Boolean = null): String
+  versionType(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type DotPageContainerContentlets {
+  contentlets(render: Boolean = null): [DotContentlet]
+  uuid(render: Boolean = null): String
+}
+
+type DotPageContainerStructure {
+  code(render: Boolean = null): String
+  containerId(render: Boolean = null): String
+  containerInode(render: Boolean = null): String
+  contentTypeVar(render: Boolean = null): String
+  id(render: Boolean = null): String
+  structureId(render: Boolean = null): String
+}
+
+type DotPageContainerUUID {
+  identifier(render: Boolean = null): String
+  uuid(render: Boolean = null): String
+}
+
+type DotPageGeolocation {
+  city(render: Boolean = null): String
+  company(render: Boolean = null): String
+  continent(render: Boolean = null): String
+  continentCode(render: Boolean = null): String
+  country(render: Boolean = null): String
+  countryCode(render: Boolean = null): String
+  ipAddress(render: Boolean = null): String
+  latitude(render: Boolean = null): String
+  longitude(render: Boolean = null): String
+  postal(render: Boolean = null): String
+  subdivision(render: Boolean = null): String
+  subdivisionCode(render: Boolean = null): String
+  timezone(render: Boolean = null): String
+}
+
+type DotPageLayout {
+  body(render: Boolean = null): DotPageBody
+  footer(render: Boolean = null): Boolean
+  header(render: Boolean = null): Boolean
+  sidebar(render: Boolean = null): DotPageSidebar
+  title(render: Boolean = null): String
+  width(render: Boolean = null): Long
+}
+
+type DotPageLayoutColumn {
+  containers(render: Boolean = null): [DotPageContainerUUID]
+  left(render: Boolean = null): Long
+  leftOffset(render: Boolean = null): Long
+  metadata(render: Boolean = null): DotPageMetadata
+  preview(render: Boolean = null): Boolean
+  styleClass(render: Boolean = null): String
+  width(render: Boolean = null): Long
+  widthPercent(render: Boolean = null): Long
+}
+
+type DotPageLayoutRow {
+  columns(render: Boolean = null): [DotPageLayoutColumn]
+  metadata(render: Boolean = null): DotPageMetadata
+  styleClass(render: Boolean = null): String
+}
+
+type DotPageMetadata {
+  name(render: Boolean = null): String
+}
+
+type DotPageRenderedContainer {
+  render(render: Boolean = null): String
+  uuid(render: Boolean = null): String
+}
+
+type DotPageSidebar {
+  containers(render: Boolean = null): [DotPageContainerUUID]
+  location(render: Boolean = null): String
+  preview(render: Boolean = null): Boolean
+  width(render: Boolean = null): String
+  widthPercent(render: Boolean = null): Long
+}
+
+type DotPageTag {
+  count(render: Boolean = null): Long
+  tag(render: Boolean = null): String
+}
+
+type DotPageTemplate {
+  anonymous(render: Boolean = null): Boolean
+  archived(render: Boolean = null): Boolean
+  canEdit(render: Boolean = null): Boolean
+  categoryId(render: Boolean = null): String
+  deleted(render: Boolean = null): Boolean
+  drawed(render: Boolean = null): Boolean
+  drawedBody(render: Boolean = null): String
+  friendlyName(render: Boolean = null): String
+  iDate(render: Boolean = null): String
+  idate(render: Boolean = null): String
+  identifier(render: Boolean = null): String
+  image(render: Boolean = null): String
+  inode(render: Boolean = null): String
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  name(render: Boolean = null): String
+  new(render: Boolean = null): Boolean
+  owner(render: Boolean = null): DotUser
+  permissionId(render: Boolean = null): String
+  permissionType(render: Boolean = null): String
+  showOnMenu(render: Boolean = null): Boolean
+  sortOrder(render: Boolean = null): Long
+  source(render: Boolean = null): String
+  template(render: Boolean = null): Boolean
+  theme(render: Boolean = null): String
+  title(render: Boolean = null): String
+  type(render: Boolean = null): String
+  versionId(render: Boolean = null): String
+  versionType(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type DotPageUserAgent {
+  browser(render: Boolean = null): String
+  browserVersion(render: Boolean = null): DotPageBrowserVersion
+  id(render: Boolean = null): Long
+  operatingSystem(render: Boolean = null): String
+}
+
+type DotPageVanityURL {
+  action(render: Boolean = null): Int
+  forwardTo(render: Boolean = null): String
+  id(render: Boolean = null): String
+  languageId(render: Boolean = null): Long
+  order(render: Boolean = null): Int
+  siteId(render: Boolean = null): String
+  uri(render: Boolean = null): String
+}
+
+type DotPageViewAs {
+  language(render: Boolean = null): DotLanguage
+  mode(render: Boolean = null): String
+  persona(render: Boolean = null): PersonaBaseType
+  variantId(render: Boolean = null): String
+  visitor(render: Boolean = null): DotPageVisitor
+}
+
+type DotPageVisitor {
+  device(render: Boolean = null): String
+  geo(render: Boolean = null): DotPageGeolocation
+  isNew(render: Boolean = null): Boolean
+  persona(render: Boolean = null): PersonaBaseType
+  personas(render: Boolean = null): [DotPageWeightedPersona]
+  tags(render: Boolean = null): [DotPageTag]
+  userAgent(render: Boolean = null): DotPageUserAgent
+}
+
+type DotPageWeightedPersona {
+  count(render: Boolean = null): Long
+  persona(render: Boolean = null): String
+}
+
+type DotSite {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  addThis(render: Boolean = null): String
+  aliases(render: Boolean = null): String
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  description(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  embeddedDashboard(render: Boolean = null): String
+  folder(render: Boolean = null): DotFolder
+  googleAnalytics(render: Boolean = null): String
+  googleMap(render: Boolean = null): String
+  hostAliases(render: Boolean = null): String
+  hostId(render: Boolean = null): String
+  hostName(render: Boolean = null): String
+  hostTagStorage(render: Boolean = null): String
+  hostThumbnail(render: Boolean = null): DotBinary
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  isDefault(render: Boolean = null): Boolean
+  keywords(render: Boolean = null): String
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  runDashboard(render: Boolean = null): Boolean
+  tagStorage(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type DotSiteOrFolder {
+  folderDefaultFileType(render: Boolean = null): String
+  folderFileMask(render: Boolean = null): String
+  folderId(render: Boolean = null): String
+  folderName(render: Boolean = null): String
+  folderPath(render: Boolean = null): String
+  folderSortOrder(render: Boolean = null): Int
+  folderTitle(render: Boolean = null): String
+  hostAliases(render: Boolean = null): String
+  hostId(render: Boolean = null): String
+  hostName(render: Boolean = null): String
+  hostTagStorage(render: Boolean = null): String
+}
+
+type DotStoryBlock {
+  json(render: Boolean = null): JSON
+}
+
+type DotUser {
+  email(render: Boolean = null): String
+  firstName(render: Boolean = null): String
+  lastName(render: Boolean = null): String
+  userId(render: Boolean = null): ID
+}
+
+type FileAsset implements DotContentlet & FileBaseType {
+  MetadataTab(render: Boolean = null): String
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  description(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  fileAsset(render: Boolean = null): DotBinary!
+  fileName(render: Boolean = null): String
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hostFolder(render: Boolean = null): DotSiteOrFolder!
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  metaData(render: Boolean = null): [DotKeyValue]
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  showOnMenu(render: Boolean = null): [String]
+  sortOrder(render: Boolean = null): Int
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type HealthTip implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  category(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  tip(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Host implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  aliases(render: Boolean = null): String
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hostName(render: Boolean = null): String!
+  hostThumbnail(render: Boolean = null): DotBinary
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  isDefault(render: Boolean = null): String
+  isSystemHost(render: Boolean = null): String
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  runDashboard(render: Boolean = null): String
+  tagStorage(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Languagevariable implements DotContentlet & KeyValueBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  key(render: Boolean = null): String!
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  value(render: Boolean = null): String!
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Location implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  address(render: Boolean = null): String
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hours(render: Boolean = null): String
+  identifier(render: Boolean = null): ID
+  image(render: Boolean = null): DotBinary
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locationType(render: Boolean = null): String
+  locked(render: Boolean = null): Boolean
+  mapUrl(render: Boolean = null): String
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  phone(render: Boolean = null): String
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Pagination {
+  fieldName(render: Boolean = null): String
+  hasNextPage(render: Boolean = null): Boolean
+  hasPreviousPage(render: Boolean = null): Boolean
+  offset(render: Boolean = null): Int
+  page(render: Boolean = null): Int
+  pageRecords(render: Boolean = null): Long
+  pageSize(render: Boolean = null): Int
+  totalPages(render: Boolean = null): Int
+  totalRecords(render: Boolean = null): Long
+}
+
+type Product implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  description(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  image(render: Boolean = null): DotFileasset!
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Query {
+  AuthorCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Author]
+  BannerCarouselCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [BannerCarousel]
+  BannerCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Banner]
+  BlogCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Blog]
+  BlogListCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [BlogList]
+  CallToActionCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [CallToAction]
+  ContentBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [ContentBaseType]
+  DoctorCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Doctor]
+  DotAssetBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [DotAssetBaseType]
+  DotAssetCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [DotAsset]
+  DotFolderByPath(path: String!, site: String): DotFolderCollectionItem
+  DotNavigation(depth: Int, languageId: Int, uri: String!): DotNavigation
+  FileAssetCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [FileAsset]
+  FileBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [FileBaseType]
+  FormBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [FormBaseType]
+  HealthTipCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [HealthTip]
+  HostCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Host]
+  KeyValueBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [KeyValueBaseType]
+  LanguagevariableCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Languagevariable]
+  LocationCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Location]
+  PageBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [PageBaseType]
+  Pagination: [Pagination]
+  PersonaBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [PersonaBaseType]
+  ProductCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Product]
+  QueryMetadata: [QueryMetadata]
+  ServiceCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Service]
+  VanityURLBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [VanityURLBaseType]
+  VanityurlCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [Vanityurl]
+  VtlFileCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [VtlFile]
+  WidgetBaseTypeCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [WidgetBaseType]
+  dotFavoritePageCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [dotFavoritePage]
+  formsCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [forms]
+  htmlpageassetCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [htmlpageasset]
+  page(fireRules: Boolean = false, languageId: String, pageMode: String, persona: String, publishDate: String, site: String, url: String!, variantName: String): DotPage
+  personaCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [persona]
+  search(limit: Int, offset: Int, page: Int, query: String!, sortBy: String): [DotContentlet]
+  webPageContentCollection(limit: Int, offset: Int, page: Int, query: String, sortBy: String): [webPageContent]
+}
+
+type QueryMetadata {
+  fieldName(render: Boolean = null): String
+  totalCount(render: Boolean = null): Long
+}
+
+type Service implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  description(render: Boolean = null): DotStoryBlock
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  icon(render: Boolean = null): String
+  identifier(render: Boolean = null): ID
+  image(render: Boolean = null): DotBinary
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  phone(render: Boolean = null): String
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  summary(render: Boolean = null): String
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  urlTitle(render: Boolean = null): String!
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type Vanityurl implements DotContentlet & VanityURLBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  action(render: Boolean = null): String!
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  forwardTo(render: Boolean = null): String!
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  order(render: Boolean = null): Int!
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  site(render: Boolean = null): DotSiteOrFolder!
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  uri(render: Boolean = null): String!
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type VtlFile implements DotContentlet & WidgetBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  vtlFile(render: Boolean = null): DotFileasset!
+  widgetCode(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  widgetPreexecute(render: Boolean = null): String
+  widgetTitle(render: Boolean = null): String!
+  widgetUsage(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type dotFavoritePage implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  order(render: Boolean = null): Int
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  screenshot(render: Boolean = null): DotBinary
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  url(render: Boolean = null): String!
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type forms implements DotContentlet & WidgetBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  formId(render: Boolean = null): String!
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCode(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  widgetPreexecute(render: Boolean = null): String
+  widgetTitle(render: Boolean = null): String!
+  widgetUsage(render: Boolean = null): String
+  working(render: Boolean = null): Boolean
+}
+
+type htmlpageasset implements DotContentlet & PageBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  advancedtab(render: Boolean = null): String
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  cachettl(render: Boolean = null): String!
+  canonicalUrl(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  friendlyName(render: Boolean = null): String!
+  host(render: Boolean = null): DotSite
+  hostFolder(render: Boolean = null): DotSiteOrFolder!
+  httpsreq(render: Boolean = null): [String]
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  metaDescription(render: Boolean = null): String
+  metaDescriptionCount(render: Boolean = null): String
+  metaKeywords(render: Boolean = null): [String]
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  ogDescription(render: Boolean = null): String
+  ogDescriptionCount(render: Boolean = null): String
+  ogImage(render: Boolean = null): DotFileasset
+  ogPreview(render: Boolean = null): String
+  ogTitle(render: Boolean = null): String
+  ogType(render: Boolean = null): String
+  owner(render: Boolean = null): DotUser
+  pageTitle(render: Boolean = null): String
+  pageTitleCount(render: Boolean = null): String
+  pagemetadata(render: Boolean = null): String
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  redirecturl(render: Boolean = null): String
+  searchEngineIndex(render: Boolean = null): [String]
+  searchEngines(render: Boolean = null): String
+  seo(render: Boolean = null): String
+  seodescription(render: Boolean = null): String
+  seokeywords(render: Boolean = null): String
+  showOnMenu(render: Boolean = null): [String]
+  sitemap(render: Boolean = null): [String]
+  sitemap1(render: Boolean = null): String
+  sitemapImportance(render: Boolean = null): String
+  social(render: Boolean = null): String
+  sortOrder(render: Boolean = null): Int!
+  template(render: Boolean = null): String!
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  url(render: Boolean = null): String!
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type persona implements DotContentlet & PersonaBaseType {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  conLanguage(render: Boolean = null): DotLanguage
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  description(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  hostFolder(render: Boolean = null): DotSiteOrFolder!
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  keyTag(render: Boolean = null): String!
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  name(render: Boolean = null): String!
+  owner(render: Boolean = null): DotUser
+  photo(render: Boolean = null): DotBinary
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  tags(render: Boolean = null): [String]
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+type webPageContent implements ContentBaseType & DotContentlet {
+  _map(depth: Int = 0, key: String, render: Boolean = null): JSON
+  archived(render: Boolean = null): Boolean
+  baseType(render: Boolean = null): String
+  body(render: Boolean = null): DotStoryBlock!
+  conLanguage(render: Boolean = null): DotLanguage
+  contentHost(render: Boolean = null): DotSiteOrFolder!
+  contentType(render: Boolean = null): String
+  creationDate(render: Boolean = null): String
+  dotStyleProperties(render: Boolean = null): JSON
+  folder(render: Boolean = null): DotFolder
+  host(render: Boolean = null): DotSite
+  identifier(render: Boolean = null): ID
+  inode(render: Boolean = null): ID
+  live(render: Boolean = null): Boolean
+  locked(render: Boolean = null): Boolean
+  modDate(render: Boolean = null): String
+  modUser(render: Boolean = null): DotUser
+  owner(render: Boolean = null): DotUser
+  publishDate(render: Boolean = null): String
+  publishUser(render: Boolean = null): DotUser
+  title(render: Boolean = null): String
+  titleImage(render: Boolean = null): DotBinary
+  urlMap(render: Boolean = null): String
+  widgetCodeJSON(render: Boolean = null): JSON
+  working(render: Boolean = null): Boolean
+}
+
+scalar JSON
+
+scalar Long

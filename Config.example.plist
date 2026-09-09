@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Copy this file to Config.plist and fill in.
+	     Config.plist is gitignored. NEVER put the auth token here;
+	     it is read from the Keychain, seeded from the
+	     DOTCMS_AUTH_TOKEN scheme environment variable. -->
+	<key>DOTCMS_HOST</key>
+	<string></string>
+	<!-- e.g. http://localhost:8082 -->
+	<key>DOTCMS_SITE_ID</key>
+	<string></string>
+	<!-- e.g. 4afebb3f5a60baed95fa8e55e1038087 (bank.com) -->
+	<key>DOTCMS_SITE_NAME</key>
+	<string></string>
+	<!-- e.g. bank.com -->
+	<key>DOTCMS_LANGUAGE_ID</key>
+	<string>1</string>
+</dict>
+</plist>

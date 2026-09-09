@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Required for Keychain access. Without an application-identifier the
+	     simulator build is ad-hoc signed with no entitlements, and every
+	     SecItemAdd fails with errSecMissingEntitlement (-34018), so the API
+	     token can never be persisted. -->
+	<key>application-identifier</key>
+	<string>com.dotcms.demo.ios</string>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>com.dotcms.demo.ios</string>
+	</array>
+</dict>
+</plist>

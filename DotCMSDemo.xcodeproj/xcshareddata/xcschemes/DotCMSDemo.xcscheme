@@ -33,7 +33,12 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
-         <EnvironmentVariable key = "DOTCMS_AUTH_TOKEN" value = "" isEnabled = "NO">
+         <!-- Reads DOTCMS_AUTH_TOKEN from the environment Xcode was launched
+              with, so no secret is stored in this tracked file. Either launch
+              Xcode from a shell that exports it, or replace $(DOTCMS_AUTH_TOKEN)
+              with the literal token here (this file is tracked - do not commit
+              that change). -->
+         <EnvironmentVariable key = "DOTCMS_AUTH_TOKEN" value = "$(DOTCMS_AUTH_TOKEN)" isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>

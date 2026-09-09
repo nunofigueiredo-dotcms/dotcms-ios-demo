@@ -26,11 +26,34 @@ target the local instance and the `bank.com` site:
 **The token never goes in a file.** It is read from the Keychain, seeded on
 first launch from a scheme environment variable.
 
-In Xcode: **Product > Scheme > Edit Scheme > Run > Arguments > Environment
-Variables**, add `DOTCMS_AUTH_TOKEN` with a read-only dotCMS API key scoped to
-Pages, Folders, Assets and Content.
+Generate a read-only key in the admin under **System > Users > admin > API
+Access Tokens**, scoped to Pages, Folders, Assets and Content. Then pick one:
 
-Generate one in the admin under **System > Users > admin > API Access Tokens**.
+**Option A — run from the terminal (simplest):**
+
+```bash
+export DOTCMS_AUTH_TOKEN='...'
+./Scripts/run-simulator.sh
+```
+
+The token is seeded into the simulator Keychain on first launch, so later runs
+from Xcode work without it.
+
+**Option B — run from Xcode:** the scheme passes `$(DOTCMS_AUTH_TOKEN)` through
+from the environment Xcode itself was launched with. Launching Xcode from Finder
+does **not** inherit your shell exports, so either launch it from a shell that
+exports the variable:
+
+```bash
+export DOTCMS_AUTH_TOKEN='...' && open DotCMSDemo.xcodeproj
+```
+
+…or set the value directly in **Product > Scheme > Edit Scheme > Run >
+Arguments > Environment Variables**. The scheme file is tracked, so do not
+commit a literal token into it.
+
+> If the app shows **"Not configured: no API token"**, the scheme has no token
+> in its environment. That is the single most common setup problem.
 
 > A token compiled into an app binary is trivially extractable from the IPA.
 > It is never hardcoded here, and requests to do so "just for the demo" should

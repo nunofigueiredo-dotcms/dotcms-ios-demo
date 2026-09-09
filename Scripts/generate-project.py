@@ -214,8 +214,8 @@ def main():
     target_common = f'''\t\t\t\tASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 \t\t\t\tASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 \t\t\t\tCODE_SIGN_STYLE = Automatic;
-\t\t\t\tCODE_SIGNING_REQUIRED = NO;
-\t\t\t\tCODE_SIGNING_ALLOWED = NO;
+\t\t\t\tCODE_SIGN_IDENTITY = "-";
+\t\t\t\tCODE_SIGN_ENTITLEMENTS = DotCMSDemo.entitlements;
 \t\t\t\tCURRENT_PROJECT_VERSION = 1;
 \t\t\t\tGENERATE_INFOPLIST_FILE = YES;
 \t\t\t\tINFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,7 +309,12 @@ SCHEME = '''<?xml version="1.0" encoding="UTF-8"?>
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
-         <EnvironmentVariable key = "DOTCMS_AUTH_TOKEN" value = "" isEnabled = "NO">
+         <!-- Reads DOTCMS_AUTH_TOKEN from the environment Xcode was launched
+              with, so no secret is stored in this tracked file. Either launch
+              Xcode from a shell that exports it, or replace $(DOTCMS_AUTH_TOKEN)
+              with the literal token here (this file is tracked - do not commit
+              that change). -->
+         <EnvironmentVariable key = "DOTCMS_AUTH_TOKEN" value = "$(DOTCMS_AUTH_TOKEN)" isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>

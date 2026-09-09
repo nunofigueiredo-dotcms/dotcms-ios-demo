@@ -27,15 +27,36 @@ enum TokenStore {
         }
     }
 
+    /// In-memory fallback for when the Keychain is unavailable.
+    ///
+    /// A simulator build signed without entitlements cannot use the Keychain
+    /// at all: every SecItemAdd fails with errSecMissingEntitlement (-34018).
+    /// Holding the seeded value for the process lifetime means the app still
+    /// works in that case instead of dead-ending on "no API token".
+    private nonisolated(unsafe) static var cached: String?
+
+    /// Set when a Keychain write failed, so Settings can say so plainly
+    /// rather than leaving the token silently unpersisted.
+    private nonisolated(unsafe) static var keychainFailure: OSStatus?
+
     /// Returns the token, seeding the Keychain from the environment if needed.
     static func token() throws -> String {
         if let seeded = ProcessInfo.processInfo.environment["DOTCMS_AUTH_TOKEN"],
            !seeded.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             let value = seeded.trimmingCharacters(in: .whitespacesAndNewlines)
-            try? save(value)
+            cached = value
+            do {
+                try save(value)
+                keychainFailure = nil
+            } catch let error as NSError {
+                // Keep going: the in-memory value is enough for this launch.
+                keychainFailure = OSStatus(error.code)
+            }
             return value
         }
+        if let cached { return cached }
         guard let stored = read() else { throw TokenError.missing }
+        cached = stored
         return stored
     }
 
@@ -79,7 +100,12 @@ enum TokenStore {
         return value
     }
 
+    /// True when the token could not be persisted to the Keychain.
+    static var isEphemeral: Bool { keychainFailure != nil || read() == nil }
+
     static func clear() {
+        cached = nil
+        keychainFailure = nil
         SecItemDelete([
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service,
@@ -89,7 +115,13 @@ enum TokenStore {
 
     /// Safe for display in Settings — never shows the token itself.
     static var redactedDescription: String {
-        guard let t = read() else { return "not set" }
-        return "stored (\(t.count) chars, ending …\(t.suffix(4)))"
+        guard let t = (try? token()) else { return "not set" }
+        let suffix = "\(t.count) chars, ending …\(t.suffix(4))"
+        if let status = keychainFailure {
+            // Surfaced rather than hidden: the token works for this launch but
+            // will not survive a relaunch without the scheme variable.
+            return "in memory only (\(suffix)) — Keychain error \(status)"
+        }
+        return read() == nil ? "in memory only (\(suffix))" : "stored (\(suffix))"
     }
 }

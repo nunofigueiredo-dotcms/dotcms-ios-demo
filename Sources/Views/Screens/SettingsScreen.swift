@@ -52,6 +52,16 @@ struct SettingsScreen: View {
                     .font(.caption.monospaced())
                 LabeledContent("Token", value: TokenStore.redactedDescription)
                     .font(.caption)
+
+                if TokenStore.isEphemeral && TokenStore.isConfigured {
+                    Label(
+                        "Token is not persisted. It will be gone on next launch "
+                        + "unless DOTCMS_AUTH_TOKEN stays set in the scheme.",
+                        systemImage: "exclamationmark.triangle"
+                    )
+                    .font(.caption2)
+                    .foregroundStyle(.orange)
+                }
             }
 
             Section {

@@ -31,7 +31,14 @@ enum DotCMSError: LocalizedError, Equatable {
     var recoverySuggestion: String? {
         switch self {
         case .notConfigured:
-            "Check Config.plist and the DOTCMS_AUTH_TOKEN scheme variable."
+            """
+            Set DOTCMS_AUTH_TOKEN in the Xcode scheme:
+            Product > Scheme > Edit Scheme > Run > Arguments >
+            Environment Variables.
+
+            Generate a token in dotCMS under
+            System > Users > admin > API Access Tokens.
+            """
         case .unauthorized:
             "Generate a new API token and update the scheme environment variable."
         case .network:

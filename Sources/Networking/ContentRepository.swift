@@ -51,9 +51,22 @@ struct ContentRepository {
         let data = try await client.fetch(
             DotCMSAPI.BlogListQuery(limit: limit, offset: offset, query: client.siteFilter)
         )
-        return (data.blogCollection ?? [])
+        let sorted = (data.blogCollection ?? [])
             .compactMap { $0?.fragments.blogFields }
             .map { Self.contentlet(from: $0, bodyJSON: nil) }
+        if !sorted.isEmpty { return sorted }
+
+        // A sortBy naming a field the index cannot sort returns ZERO results
+        // with no GraphQL error — indistinguishable from "no content". Retry
+        // unsorted so a demo degrades to unordered posts instead of a blank
+        // screen, and sort client-side by the date we already have.
+        let unsorted = try await client.fetch(
+            DotCMSAPI.BlogListUnsortedQuery(limit: limit, offset: offset, query: client.siteFilter)
+        )
+        return (unsorted.blogCollection ?? [])
+            .compactMap { $0?.fragments.blogFields }
+            .map { Self.contentlet(from: $0, bodyJSON: nil) }
+            .sorted { ($0.publishDate ?? .distantPast) > ($1.publishDate ?? .distantPast) }
     }
 
     func blog(urlTitle: String) async throws -> Contentlet {
@@ -66,7 +79,7 @@ struct ContentRepository {
         }
         return Self.contentlet(
             from: first.fragments.blogFields,
-            bodyJSON: first.body?.json
+            bodyJSON: first.body?.json?.jsonObject
         )
     }
 
@@ -74,7 +87,7 @@ struct ContentRepository {
 
     private static func contentlet(
         from blog: DotCMSAPI.BlogFields,
-        bodyJSON: DotCMSAPI.JSON?
+        bodyJSON: Any?
     ) -> Contentlet {
         let image = blog.image
         return Contentlet(

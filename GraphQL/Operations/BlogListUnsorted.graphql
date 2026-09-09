@@ -1,0 +1,9 @@
+# Fallback for BlogList. dotCMS returns ZERO results with no error when
+# sortBy names a field the index cannot sort (Blog.modDate does this, while
+# Blog.publishDate works). This unsorted query lets the app degrade to
+# client-side sorting rather than showing an empty screen during a demo.
+query BlogListUnsorted($limit: Int!, $offset: Int!, $query: String!) {
+  BlogCollection(limit: $limit, offset: $offset, query: $query) {
+    ...BlogFields
+  }
+}

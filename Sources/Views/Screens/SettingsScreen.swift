@@ -37,6 +37,16 @@ struct SettingsScreen: View {
                 Text("Sent as the dotcachettl header on every GraphQL request.")
             }
 
+            Section {
+                ForEach(ContentletRegistry.registeredTypes, id: \.self) { type in
+                    Text(type).font(.caption.monospaced())
+                }
+            } header: {
+                Text("Registered content types")
+            } footer: {
+                Text("Anything else renders a \"No component for type X\" placeholder.")
+            }
+
             Section("Schema") {
                 LabeledContent("Committed hash", value: SchemaInfo.shortHash)
                     .font(.caption.monospaced())

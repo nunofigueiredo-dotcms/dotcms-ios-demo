@@ -16,6 +16,7 @@
 		439BB0D4E2F95169D378CB3A /* WebPageContentFields.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF52F2BF970F9C9D47EE171; };
 		47B790166FFDD1FFFB37F033 /* BlogDetailQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576865A0F776531E66D65F9B; };
 		7C4798A3C239724CD3B1F429 /* BlogListQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9416173E9167C121161D7F3; };
+		23348CD6F0887441569B86D3 /* BlogListUnsortedQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2850A898BB8DB75A311A5B7; };
 		C29489936C0DAFED367CCA14 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C159638045E54DE0ADB46; };
 		FD5E47B3C45DACB5EBF47D85 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD671BE9FA4537CC8C45619B; };
 		EAAAB6F54793F6162BE96D9E /* Long.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95C412BD88EE2FE95AB7832; };
@@ -56,17 +57,21 @@
 		83599FFFC75CABBEA6FCC77B /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415C9D189D3BEA0AE66ED86; };
 		746CED2A72D6050A8525A87B /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF24E7646477DD322EDBA73; };
 		C24D6A1ED5736A746101F304 /* Contentlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68713074A2831CBCC407DBB; };
+		361816089FF5E0662F4A7E38 /* PageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0603A6D514F1167E2CDC4FD; };
 		14FC8F3DFBF7396D828FD37D /* StoryBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9ADC6E0B8C0C6FDE2B705; };
 		AA70EDD194A4B12EEE6EB2CA /* CachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E343968AE98CF505D923DF; };
 		F3164C26E3BC22CCAC66E544 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB31BCE5617329A54934CA; };
 		CC5029066DE70862F92834C3 /* DotCMSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06692B7EB5720B61D1AA33ED; };
 		64CD040D83BB329C83215F3F /* DotCMSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E461B7F56683DFF91437FC; };
 		A0F7FAAB1EDFE665BAD543FD /* DotCMSImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96640B37E7C2199A76507DE8; };
+		8277D06199513B9511A3E698 /* PageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2833BADC1D275C9B29532A; };
 		A3B89B1650812881B028963B /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290E6E4D1BA12154B9A480B; };
 		243F1F63F928F2E510A413E1 /* SchemaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B02A6AD3F21F261B92E0; };
 		61365FA90ED7B8AC3C75CADE /* DotImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC5D0BC327616E61A40696; };
 		67B3DA223D6F285C3F8168B8 /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1373F46E40865A3B4061E; };
 		9D4EB1B40C462754B5F56D0B /* StoryBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B9BB58BB7117C6BA37C8F0; };
+		69551484F31E1863D05846C3 /* ContentletCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531D420E2EE9F1D029BE23; };
+		697FEF4D6C85F11C4CA7486A /* ContentletRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB44EE86A5174AC80676A8; };
 		F477712A1ADA097C5BE45AE2 /* BlogDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189F83D3BBC5F0D5C02B7EE; };
 		8F0BBD4D2839EF258BBE1F4F /* BlogListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D5639E5980E71A37DBC7D; };
 		F58324CC81749A886B08E9EC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96EBE7CC8129FB1C0C45699; };
@@ -87,6 +92,7 @@
 		8CF52F2BF970F9C9D47EE171 /* WebPageContentFields.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WebPageContentFields.graphql.swift"; path = "Sources/Generated/Schema/Fragments/WebPageContentFields.graphql.swift"; sourceTree = "<group>"; };
 		576865A0F776531E66D65F9B /* BlogDetailQuery.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogDetailQuery.graphql.swift"; path = "Sources/Generated/Schema/Operations/Queries/BlogDetailQuery.graphql.swift"; sourceTree = "<group>"; };
 		D9416173E9167C121161D7F3 /* BlogListQuery.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogListQuery.graphql.swift"; path = "Sources/Generated/Schema/Operations/Queries/BlogListQuery.graphql.swift"; sourceTree = "<group>"; };
+		E2850A898BB8DB75A311A5B7 /* BlogListUnsortedQuery.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogListUnsortedQuery.graphql.swift"; path = "Sources/Generated/Schema/Operations/Queries/BlogListUnsortedQuery.graphql.swift"; sourceTree = "<group>"; };
 		EA2C159638045E54DE0ADB46 /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ID.swift"; path = "Sources/Generated/Schema/Schema/CustomScalars/ID.swift"; sourceTree = "<group>"; };
 		AD671BE9FA4537CC8C45619B /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "JSON.swift"; path = "Sources/Generated/Schema/Schema/CustomScalars/JSON.swift"; sourceTree = "<group>"; };
 		E95C412BD88EE2FE95AB7832 /* Long.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Long.swift"; path = "Sources/Generated/Schema/Schema/CustomScalars/Long.swift"; sourceTree = "<group>"; };
@@ -127,17 +133,21 @@
 		F415C9D189D3BEA0AE66ED86 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SchemaConfiguration.swift"; path = "Sources/Generated/Schema/Schema/SchemaConfiguration.swift"; sourceTree = "<group>"; };
 		AFF24E7646477DD322EDBA73 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SchemaMetadata.graphql.swift"; path = "Sources/Generated/Schema/Schema/SchemaMetadata.graphql.swift"; sourceTree = "<group>"; };
 		F68713074A2831CBCC407DBB /* Contentlet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Contentlet.swift"; path = "Sources/Models/Contentlet.swift"; sourceTree = "<group>"; };
+		A0603A6D514F1167E2CDC4FD /* PageLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PageLayout.swift"; path = "Sources/Models/PageLayout.swift"; sourceTree = "<group>"; };
 		2AC9ADC6E0B8C0C6FDE2B705 /* StoryBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryBlock.swift"; path = "Sources/Models/StoryBlock.swift"; sourceTree = "<group>"; };
 		72E343968AE98CF505D923DF /* CachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CachePolicy.swift"; path = "Sources/Networking/CachePolicy.swift"; sourceTree = "<group>"; };
 		E7DB31BCE5617329A54934CA /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentRepository.swift"; path = "Sources/Networking/ContentRepository.swift"; sourceTree = "<group>"; };
 		06692B7EB5720B61D1AA33ED /* DotCMSClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSClient.swift"; path = "Sources/Networking/DotCMSClient.swift"; sourceTree = "<group>"; };
 		60E461B7F56683DFF91437FC /* DotCMSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSError.swift"; path = "Sources/Networking/DotCMSError.swift"; sourceTree = "<group>"; };
 		96640B37E7C2199A76507DE8 /* DotCMSImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSImageURL.swift"; path = "Sources/Networking/DotCMSImageURL.swift"; sourceTree = "<group>"; };
+		4D2833BADC1D275C9B29532A /* PageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PageRepository.swift"; path = "Sources/Networking/PageRepository.swift"; sourceTree = "<group>"; };
 		B290E6E4D1BA12154B9A480B /* LoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LoadState.swift"; path = "Sources/Support/LoadState.swift"; sourceTree = "<group>"; };
 		B673B02A6AD3F21F261B92E0 /* SchemaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SchemaInfo.swift"; path = "Sources/Support/SchemaInfo.swift"; sourceTree = "<group>"; };
 		45DC5D0BC327616E61A40696 /* DotImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotImage.swift"; path = "Sources/Views/Components/DotImage.swift"; sourceTree = "<group>"; };
 		B5D1373F46E40865A3B4061E /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StateViews.swift"; path = "Sources/Views/Components/StateViews.swift"; sourceTree = "<group>"; };
 		93B9BB58BB7117C6BA37C8F0 /* StoryBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryBlockView.swift"; path = "Sources/Views/Components/StoryBlockView.swift"; sourceTree = "<group>"; };
+		FA531D420E2EE9F1D029BE23 /* ContentletCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentletCards.swift"; path = "Sources/Views/Contentlets/ContentletCards.swift"; sourceTree = "<group>"; };
+		B0DB44EE86A5174AC80676A8 /* ContentletRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentletRegistry.swift"; path = "Sources/Views/Contentlets/ContentletRegistry.swift"; sourceTree = "<group>"; };
 		6189F83D3BBC5F0D5C02B7EE /* BlogDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogDetailScreen.swift"; path = "Sources/Views/Screens/BlogDetailScreen.swift"; sourceTree = "<group>"; };
 		608D5639E5980E71A37DBC7D /* BlogListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogListScreen.swift"; path = "Sources/Views/Screens/BlogListScreen.swift"; sourceTree = "<group>"; };
 		C96EBE7CC8129FB1C0C45699 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HomeScreen.swift"; path = "Sources/Views/Screens/HomeScreen.swift"; sourceTree = "<group>"; };
@@ -159,6 +169,7 @@
 				8CF52F2BF970F9C9D47EE171 /* WebPageContentFields.graphql.swift */,
 				576865A0F776531E66D65F9B /* BlogDetailQuery.graphql.swift */,
 				D9416173E9167C121161D7F3 /* BlogListQuery.graphql.swift */,
+				E2850A898BB8DB75A311A5B7 /* BlogListUnsortedQuery.graphql.swift */,
 				EA2C159638045E54DE0ADB46 /* ID.swift */,
 				AD671BE9FA4537CC8C45619B /* JSON.swift */,
 				E95C412BD88EE2FE95AB7832 /* Long.swift */,
@@ -199,17 +210,21 @@
 				F415C9D189D3BEA0AE66ED86 /* SchemaConfiguration.swift */,
 				AFF24E7646477DD322EDBA73 /* SchemaMetadata.graphql.swift */,
 				F68713074A2831CBCC407DBB /* Contentlet.swift */,
+				A0603A6D514F1167E2CDC4FD /* PageLayout.swift */,
 				2AC9ADC6E0B8C0C6FDE2B705 /* StoryBlock.swift */,
 				72E343968AE98CF505D923DF /* CachePolicy.swift */,
 				E7DB31BCE5617329A54934CA /* ContentRepository.swift */,
 				06692B7EB5720B61D1AA33ED /* DotCMSClient.swift */,
 				60E461B7F56683DFF91437FC /* DotCMSError.swift */,
 				96640B37E7C2199A76507DE8 /* DotCMSImageURL.swift */,
+				4D2833BADC1D275C9B29532A /* PageRepository.swift */,
 				B290E6E4D1BA12154B9A480B /* LoadState.swift */,
 				B673B02A6AD3F21F261B92E0 /* SchemaInfo.swift */,
 				45DC5D0BC327616E61A40696 /* DotImage.swift */,
 				B5D1373F46E40865A3B4061E /* StateViews.swift */,
 				93B9BB58BB7117C6BA37C8F0 /* StoryBlockView.swift */,
+				FA531D420E2EE9F1D029BE23 /* ContentletCards.swift */,
+				B0DB44EE86A5174AC80676A8 /* ContentletRegistry.swift */,
 				6189F83D3BBC5F0D5C02B7EE /* BlogDetailScreen.swift */,
 				608D5639E5980E71A37DBC7D /* BlogListScreen.swift */,
 				C96EBE7CC8129FB1C0C45699 /* HomeScreen.swift */,
@@ -292,6 +307,7 @@
 				439BB0D4E2F95169D378CB3A,
 				47B790166FFDD1FFFB37F033,
 				7C4798A3C239724CD3B1F429,
+				23348CD6F0887441569B86D3,
 				C29489936C0DAFED367CCA14,
 				FD5E47B3C45DACB5EBF47D85,
 				EAAAB6F54793F6162BE96D9E,
@@ -332,17 +348,21 @@
 				83599FFFC75CABBEA6FCC77B,
 				746CED2A72D6050A8525A87B,
 				C24D6A1ED5736A746101F304,
+				361816089FF5E0662F4A7E38,
 				14FC8F3DFBF7396D828FD37D,
 				AA70EDD194A4B12EEE6EB2CA,
 				F3164C26E3BC22CCAC66E544,
 				CC5029066DE70862F92834C3,
 				64CD040D83BB329C83215F3F,
 				A0F7FAAB1EDFE665BAD543FD,
+				8277D06199513B9511A3E698,
 				A3B89B1650812881B028963B,
 				243F1F63F928F2E510A413E1,
 				61365FA90ED7B8AC3C75CADE,
 				67B3DA223D6F285C3F8168B8,
 				9D4EB1B40C462754B5F56D0B,
+				69551484F31E1863D05846C3,
+				697FEF4D6C85F11C4CA7486A,
 				F477712A1ADA097C5BE45AE2,
 				8F0BBD4D2839EF258BBE1F4F,
 				F58324CC81749A886B08E9EC,

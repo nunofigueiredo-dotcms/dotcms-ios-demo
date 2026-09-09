@@ -22,7 +22,7 @@ final class DotCMSInterceptor: ApolloInterceptor {
         response: HTTPResponse<Operation>?,
         completion: @escaping (Result<GraphQLResult<Operation.Data>, any Error>) -> Void
     ) {
-        if let token = TokenStore.read() {
+        if let token = try? TokenStore.token() {
             request.addHeader(name: "Authorization", value: "Bearer \(token)")
         }
         let policy = policyProvider()

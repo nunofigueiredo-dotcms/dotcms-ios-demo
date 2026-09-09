@@ -30,12 +30,19 @@ struct StoryBlock: Hashable, Sendable {
         self.nodes = parsed
     }
 
-    /// The body arrives either as a JSON object or as a JSON string,
-    /// depending on whether `render` was requested. Handle both.
+    /// The body arrives as a JSON object, but may also be a JSON string when
+    /// `render` is requested, or Apollo's AnyHashable-wrapped graph. Accept all
+    /// three rather than assuming one shape.
     private static func asDictionary(_ value: Any?) -> [String: Any]? {
         if let dict = value as? [String: Any] { return dict }
+        if let dict = value as? [String: AnyHashable] {
+            return dict.reduce(into: [String: Any]()) { $0[$1.key] = $1.value.base }
+        }
         if let string = value as? String, let data = string.data(using: .utf8) {
             return try? JSONSerialization.jsonObject(with: data) as? [String: Any]
+        }
+        if let hashable = value as? AnyHashable, !(hashable.base is AnyHashable) {
+            return asDictionary(hashable.base)
         }
         return nil
     }

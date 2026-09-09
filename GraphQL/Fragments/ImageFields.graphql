@@ -1,0 +1,10 @@
+fragment ImageFields on DotBinary {
+  path
+  idPath
+  versionPath
+  name
+  isImage
+  mime
+  width
+  height
+}

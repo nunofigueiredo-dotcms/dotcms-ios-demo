@@ -1,0 +1,8 @@
+fragment WebPageContentFields on webPageContent {
+  identifier
+  inode
+  title
+  body {
+    json
+  }
+}

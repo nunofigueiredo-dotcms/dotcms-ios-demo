@@ -1,0 +1,13 @@
+# NOTE: sortBy MUST be type-qualified ("Blog.publishDate desc").
+# A bare field name ("publishDate desc") returns ZERO results silently
+# rather than erroring. Verified against dotCMS 8082, 2026-09-09.
+query BlogList($limit: Int!, $offset: Int!, $query: String!) {
+  BlogCollection(
+    limit: $limit
+    offset: $offset
+    query: $query
+    sortBy: "Blog.publishDate desc"
+  ) {
+    ...BlogFields
+  }
+}

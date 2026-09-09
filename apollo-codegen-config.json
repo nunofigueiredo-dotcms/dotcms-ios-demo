@@ -1,0 +1,27 @@
+{
+  "schemaNamespace": "DotCMSAPI",
+  "input": {
+    "operationSearchPaths": ["GraphQL/**/*.graphql"],
+    "schemaSearchPaths": ["Schema/schema.graphqls"]
+  },
+  "output": {
+    "testMocks": { "none": {} },
+    "schemaTypes": {
+      "path": "Sources/Generated/Schema",
+      "moduleType": { "embeddedInTarget": { "name": "DotCMSDemo" } }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  },
+  "options": {
+    "additionalInflectionRules": [],
+    "deprecatedEnumCases": "exclude",
+    "schemaDocumentation": "include",
+    "warningsOnDeprecatedUsage": "include",
+    "conversionStrategies": {
+      "fieldAccessors": "idiomatic",
+      "inputObjects": "camelCase"
+    }
+  }
+}

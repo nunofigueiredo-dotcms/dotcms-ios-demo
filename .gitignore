@@ -28,3 +28,6 @@ apollo-codegen-config.local.json
 
 # macOS
 .DS_Store
+
+# Apollo CLI binary — built from source, not committed (55MB)
+Scripts/apollo-ios-cli

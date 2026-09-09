@@ -1,0 +1,18 @@
+fragment BlogFields on Blog {
+  identifier
+  inode
+  title
+  urlTitle
+  description
+  publishDate
+  urlMap
+  image {
+    ...ImageFields
+  }
+  author {
+    title
+    image {
+      ...ImageFields
+    }
+  }
+}

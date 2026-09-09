@@ -1,0 +1,11 @@
+fragment BannerFields on Banner {
+  identifier
+  inode
+  title
+  caption
+  buttonText
+  link
+  image {
+    ...ImageFields
+  }
+}

@@ -1,0 +1,8 @@
+query BlogDetail($query: String!) {
+  BlogCollection(limit: 1, query: $query) {
+    ...BlogFields
+    body {
+      json
+    }
+  }
+}

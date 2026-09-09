@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		706A2C38F8B5247A173F40C8 /* DotCMSDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8150624217747F9C3781A84; };
+		CAE3D2EA74EE443A8F2969B2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3414BFE7AFD83EAB12EBA8; };
+		8F1CF1D887232BBF8756A46E /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04229EDBF81853C5D7A113E; };
+		9BCD19FA64AEEAC62260645C /* DotCMSAPI.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B47A5495AAC7F4B119C239; };
+		925B1DF4807DD004658217CE /* BannerFields.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA6CDECF4B267C2FFFA96F3; };
+		AEEF5ACA559C7B60721B16CC /* BlogFields.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363F34CFCF146637113E843; };
+		942D923FD24B91BD37868889 /* ImageFields.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885858CFD59B480556A3565; };
+		439BB0D4E2F95169D378CB3A /* WebPageContentFields.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF52F2BF970F9C9D47EE171; };
+		47B790166FFDD1FFFB37F033 /* BlogDetailQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576865A0F776531E66D65F9B; };
+		7C4798A3C239724CD3B1F429 /* BlogListQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9416173E9167C121161D7F3; };
+		C29489936C0DAFED367CCA14 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C159638045E54DE0ADB46; };
+		FD5E47B3C45DACB5EBF47D85 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD671BE9FA4537CC8C45619B; };
+		EAAAB6F54793F6162BE96D9E /* Long.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95C412BD88EE2FE95AB7832; };
+		DBA1EF759547D717DBB15BBF /* ContentBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1924AEE094AB7DE2B01B8; };
+		EAC30C3772FD993093FCC93D /* DotAssetBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA26F78EBE0FF5200AF526; };
+		83A100D4917FD8EABC8699C7 /* DotContentlet.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C64A65D239C1F7E394FBBE; };
+		9BC6EEB13D27DFFF2397D35E /* FileBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCE21A853C00CCB3F4E780C; };
+		834E765748613CA8E6F78705 /* KeyValueBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E16A40726043323B4546226; };
+		D753BE8FED2E56F00B8F5F7A /* PageBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACEFA510E8CD7C5DAEAD65B; };
+		F2A072DD915B1DF2B2A7079E /* PersonaBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83794C54446D1B9D39B3EE52; };
+		708235730E5557E0E5BFDC46 /* VanityURLBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A497B6C9719E60330F92D9; };
+		98D4A77A0BB0DA2C424885A7 /* WidgetBaseType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAFA2E13DF1077FC99F21F7; };
+		ED1FD7DEDF464269B88C10DF /* Author.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF46C721B440F994EF30DD0; };
+		56076FC7239B83ECDF75969B /* Banner.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577432B8105A300AB4E958B6; };
+		FA42E0703512152FFE99F38D /* BannerCarousel.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC510A575B143EF1E694CF35; };
+		DFE0CA2D174125718AA1BF4C /* Blog.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CEF2588B2ABDCFEB64245; };
+		5D2E60698CE0DCB0939696FD /* BlogList.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1974F17158EEBD010A9A1220; };
+		43F6319FF41FC93AFADE57E4 /* CallToAction.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E569636184836990D51B7; };
+		883C62A9409DBA8EA6697DA7 /* Doctor.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016A1785519A6CC67E924907; };
+		2E32049FC59DA3288A449D9E /* DotAsset.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34F46C87048CBF18CF2E217; };
+		F823E6D3B5050682717003FC /* DotBinary.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1F438EBED6D6F12AAF76B; };
+		A5F5ABDAF7D1CE3172F01438 /* DotFavoritePage.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FC6BD51CE894568BFF0A74; };
+		C5740922D5B1BEEC770F0850 /* DotStoryBlock.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BD5251E75CC5A0F65D07B; };
+		1045D711785397C00AD980F3 /* FileAsset.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BF00440DC5AFD911E4C63; };
+		810C40E073DF6337C2D322A6 /* Forms.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A5B72EBC4E94A7FDECE8FE; };
+		787AC08542F862CDE991561A /* HealthTip.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = D144DDA07816AE6C6F25FB38; };
+		C6BC3E6F5FE78C1FC9CFDE27 /* Host.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0A1184C683588D6A275B4A; };
+		A150294D4D56E448C72377EF /* Htmlpageasset.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA56147161C51FEE29C5E6CB; };
+		CBAD3AA6711CE807A9F7B9E8 /* Languagevariable.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7784144D5C0D20B44D2AD39; };
+		AD3C739FE679A153194D161C /* Location.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C92491704FC581F92E77CD; };
+		4FCEA74ECDB5185DDB9FF41A /* Persona.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5B13C4A1E8C46885D85D5B; };
+		59A9AB14AB3157727566BB55 /* Product.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528BDB33A0A20FA23B5D049; };
+		FAE18DBCA83A30BBA7919344 /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEBB1D103F8F0898B6C427; };
+		D31028F2C363509D49715601 /* Service.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5382F532215BD023A23077; };
+		882F89CF5F7EFD86938D6E1C /* Vanityurl.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE7D353496FF3B1F4DE5B5; };
+		E9A885AE938E2CA80C11C0CA /* VtlFile.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2737AD4884A0AE000896B1C2; };
+		1E70133844582AC38730A476 /* WebPageContent.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = A705C7F7A20803FD08A31480; };
+		83599FFFC75CABBEA6FCC77B /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415C9D189D3BEA0AE66ED86; };
+		746CED2A72D6050A8525A87B /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF24E7646477DD322EDBA73; };
+		C24D6A1ED5736A746101F304 /* Contentlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68713074A2831CBCC407DBB; };
+		14FC8F3DFBF7396D828FD37D /* StoryBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC9ADC6E0B8C0C6FDE2B705; };
+		AA70EDD194A4B12EEE6EB2CA /* CachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E343968AE98CF505D923DF; };
+		F3164C26E3BC22CCAC66E544 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB31BCE5617329A54934CA; };
+		CC5029066DE70862F92834C3 /* DotCMSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06692B7EB5720B61D1AA33ED; };
+		64CD040D83BB329C83215F3F /* DotCMSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E461B7F56683DFF91437FC; };
+		A0F7FAAB1EDFE665BAD543FD /* DotCMSImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96640B37E7C2199A76507DE8; };
+		A3B89B1650812881B028963B /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290E6E4D1BA12154B9A480B; };
+		243F1F63F928F2E510A413E1 /* SchemaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B673B02A6AD3F21F261B92E0; };
+		61365FA90ED7B8AC3C75CADE /* DotImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DC5D0BC327616E61A40696; };
+		67B3DA223D6F285C3F8168B8 /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D1373F46E40865A3B4061E; };
+		9D4EB1B40C462754B5F56D0B /* StoryBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B9BB58BB7117C6BA37C8F0; };
+		F477712A1ADA097C5BE45AE2 /* BlogDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189F83D3BBC5F0D5C02B7EE; };
+		8F0BBD4D2839EF258BBE1F4F /* BlogListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D5639E5980E71A37DBC7D; };
+		F58324CC81749A886B08E9EC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96EBE7CC8129FB1C0C45699; };
+		1B6066AB2CD2016A8DDA02F1 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681E4F115A6ADBFB0678E3F; };
+		D395E979E3806C94B3807D1A /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0FFDF6E2EC75AA302FAA5D; };
+		EF9EC8C23BC82089BC26ED07 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = E9BF2B2031E721C9543380D5; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C70535C22995D927B2283DB /* DotCMSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotCMSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8150624217747F9C3781A84 /* DotCMSDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSDemoApp.swift"; path = "Sources/App/DotCMSDemoApp.swift"; sourceTree = "<group>"; };
+		FF3414BFE7AFD83EAB12EBA8 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AppConfig.swift"; path = "Sources/Config/AppConfig.swift"; sourceTree = "<group>"; };
+		E04229EDBF81853C5D7A113E /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TokenStore.swift"; path = "Sources/Config/TokenStore.swift"; sourceTree = "<group>"; };
+		90B47A5495AAC7F4B119C239 /* DotCMSAPI.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSAPI.graphql.swift"; path = "Sources/Generated/Schema/DotCMSAPI.graphql.swift"; sourceTree = "<group>"; };
+		0AA6CDECF4B267C2FFFA96F3 /* BannerFields.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BannerFields.graphql.swift"; path = "Sources/Generated/Schema/Fragments/BannerFields.graphql.swift"; sourceTree = "<group>"; };
+		D363F34CFCF146637113E843 /* BlogFields.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogFields.graphql.swift"; path = "Sources/Generated/Schema/Fragments/BlogFields.graphql.swift"; sourceTree = "<group>"; };
+		8885858CFD59B480556A3565 /* ImageFields.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ImageFields.graphql.swift"; path = "Sources/Generated/Schema/Fragments/ImageFields.graphql.swift"; sourceTree = "<group>"; };
+		8CF52F2BF970F9C9D47EE171 /* WebPageContentFields.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WebPageContentFields.graphql.swift"; path = "Sources/Generated/Schema/Fragments/WebPageContentFields.graphql.swift"; sourceTree = "<group>"; };
+		576865A0F776531E66D65F9B /* BlogDetailQuery.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogDetailQuery.graphql.swift"; path = "Sources/Generated/Schema/Operations/Queries/BlogDetailQuery.graphql.swift"; sourceTree = "<group>"; };
+		D9416173E9167C121161D7F3 /* BlogListQuery.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogListQuery.graphql.swift"; path = "Sources/Generated/Schema/Operations/Queries/BlogListQuery.graphql.swift"; sourceTree = "<group>"; };
+		EA2C159638045E54DE0ADB46 /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ID.swift"; path = "Sources/Generated/Schema/Schema/CustomScalars/ID.swift"; sourceTree = "<group>"; };
+		AD671BE9FA4537CC8C45619B /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "JSON.swift"; path = "Sources/Generated/Schema/Schema/CustomScalars/JSON.swift"; sourceTree = "<group>"; };
+		E95C412BD88EE2FE95AB7832 /* Long.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Long.swift"; path = "Sources/Generated/Schema/Schema/CustomScalars/Long.swift"; sourceTree = "<group>"; };
+		6AC1924AEE094AB7DE2B01B8 /* ContentBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/ContentBaseType.graphql.swift"; sourceTree = "<group>"; };
+		5ADA26F78EBE0FF5200AF526 /* DotAssetBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotAssetBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/DotAssetBaseType.graphql.swift"; sourceTree = "<group>"; };
+		56C64A65D239C1F7E394FBBE /* DotContentlet.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotContentlet.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/DotContentlet.graphql.swift"; sourceTree = "<group>"; };
+		ACCE21A853C00CCB3F4E780C /* FileBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FileBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/FileBaseType.graphql.swift"; sourceTree = "<group>"; };
+		3E16A40726043323B4546226 /* KeyValueBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "KeyValueBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/KeyValueBaseType.graphql.swift"; sourceTree = "<group>"; };
+		EACEFA510E8CD7C5DAEAD65B /* PageBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PageBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/PageBaseType.graphql.swift"; sourceTree = "<group>"; };
+		83794C54446D1B9D39B3EE52 /* PersonaBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PersonaBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/PersonaBaseType.graphql.swift"; sourceTree = "<group>"; };
+		15A497B6C9719E60330F92D9 /* VanityURLBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VanityURLBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/VanityURLBaseType.graphql.swift"; sourceTree = "<group>"; };
+		5FAFA2E13DF1077FC99F21F7 /* WidgetBaseType.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WidgetBaseType.graphql.swift"; path = "Sources/Generated/Schema/Schema/Interfaces/WidgetBaseType.graphql.swift"; sourceTree = "<group>"; };
+		8FF46C721B440F994EF30DD0 /* Author.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Author.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Author.graphql.swift"; sourceTree = "<group>"; };
+		577432B8105A300AB4E958B6 /* Banner.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Banner.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Banner.graphql.swift"; sourceTree = "<group>"; };
+		CC510A575B143EF1E694CF35 /* BannerCarousel.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BannerCarousel.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/BannerCarousel.graphql.swift"; sourceTree = "<group>"; };
+		863CEF2588B2ABDCFEB64245 /* Blog.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Blog.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Blog.graphql.swift"; sourceTree = "<group>"; };
+		1974F17158EEBD010A9A1220 /* BlogList.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogList.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/BlogList.graphql.swift"; sourceTree = "<group>"; };
+		A64E569636184836990D51B7 /* CallToAction.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CallToAction.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/CallToAction.graphql.swift"; sourceTree = "<group>"; };
+		016A1785519A6CC67E924907 /* Doctor.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Doctor.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Doctor.graphql.swift"; sourceTree = "<group>"; };
+		F34F46C87048CBF18CF2E217 /* DotAsset.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotAsset.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/DotAsset.graphql.swift"; sourceTree = "<group>"; };
+		CFE1F438EBED6D6F12AAF76B /* DotBinary.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotBinary.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/DotBinary.graphql.swift"; sourceTree = "<group>"; };
+		A0FC6BD51CE894568BFF0A74 /* DotFavoritePage.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotFavoritePage.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/DotFavoritePage.graphql.swift"; sourceTree = "<group>"; };
+		2E9BD5251E75CC5A0F65D07B /* DotStoryBlock.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotStoryBlock.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/DotStoryBlock.graphql.swift"; sourceTree = "<group>"; };
+		193BF00440DC5AFD911E4C63 /* FileAsset.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "FileAsset.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/FileAsset.graphql.swift"; sourceTree = "<group>"; };
+		A6A5B72EBC4E94A7FDECE8FE /* Forms.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Forms.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Forms.graphql.swift"; sourceTree = "<group>"; };
+		D144DDA07816AE6C6F25FB38 /* HealthTip.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HealthTip.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/HealthTip.graphql.swift"; sourceTree = "<group>"; };
+		DF0A1184C683588D6A275B4A /* Host.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Host.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Host.graphql.swift"; sourceTree = "<group>"; };
+		CA56147161C51FEE29C5E6CB /* Htmlpageasset.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Htmlpageasset.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Htmlpageasset.graphql.swift"; sourceTree = "<group>"; };
+		B7784144D5C0D20B44D2AD39 /* Languagevariable.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Languagevariable.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Languagevariable.graphql.swift"; sourceTree = "<group>"; };
+		A7C92491704FC581F92E77CD /* Location.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Location.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Location.graphql.swift"; sourceTree = "<group>"; };
+		3E5B13C4A1E8C46885D85D5B /* Persona.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Persona.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Persona.graphql.swift"; sourceTree = "<group>"; };
+		3528BDB33A0A20FA23B5D049 /* Product.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Product.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Product.graphql.swift"; sourceTree = "<group>"; };
+		EAFEBB1D103F8F0898B6C427 /* Query.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Query.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Query.graphql.swift"; sourceTree = "<group>"; };
+		5E5382F532215BD023A23077 /* Service.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Service.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Service.graphql.swift"; sourceTree = "<group>"; };
+		43CE7D353496FF3B1F4DE5B5 /* Vanityurl.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Vanityurl.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/Vanityurl.graphql.swift"; sourceTree = "<group>"; };
+		2737AD4884A0AE000896B1C2 /* VtlFile.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "VtlFile.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/VtlFile.graphql.swift"; sourceTree = "<group>"; };
+		A705C7F7A20803FD08A31480 /* WebPageContent.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WebPageContent.graphql.swift"; path = "Sources/Generated/Schema/Schema/Objects/WebPageContent.graphql.swift"; sourceTree = "<group>"; };
+		F415C9D189D3BEA0AE66ED86 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SchemaConfiguration.swift"; path = "Sources/Generated/Schema/Schema/SchemaConfiguration.swift"; sourceTree = "<group>"; };
+		AFF24E7646477DD322EDBA73 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SchemaMetadata.graphql.swift"; path = "Sources/Generated/Schema/Schema/SchemaMetadata.graphql.swift"; sourceTree = "<group>"; };
+		F68713074A2831CBCC407DBB /* Contentlet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Contentlet.swift"; path = "Sources/Models/Contentlet.swift"; sourceTree = "<group>"; };
+		2AC9ADC6E0B8C0C6FDE2B705 /* StoryBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryBlock.swift"; path = "Sources/Models/StoryBlock.swift"; sourceTree = "<group>"; };
+		72E343968AE98CF505D923DF /* CachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CachePolicy.swift"; path = "Sources/Networking/CachePolicy.swift"; sourceTree = "<group>"; };
+		E7DB31BCE5617329A54934CA /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentRepository.swift"; path = "Sources/Networking/ContentRepository.swift"; sourceTree = "<group>"; };
+		06692B7EB5720B61D1AA33ED /* DotCMSClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSClient.swift"; path = "Sources/Networking/DotCMSClient.swift"; sourceTree = "<group>"; };
+		60E461B7F56683DFF91437FC /* DotCMSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSError.swift"; path = "Sources/Networking/DotCMSError.swift"; sourceTree = "<group>"; };
+		96640B37E7C2199A76507DE8 /* DotCMSImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotCMSImageURL.swift"; path = "Sources/Networking/DotCMSImageURL.swift"; sourceTree = "<group>"; };
+		B290E6E4D1BA12154B9A480B /* LoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LoadState.swift"; path = "Sources/Support/LoadState.swift"; sourceTree = "<group>"; };
+		B673B02A6AD3F21F261B92E0 /* SchemaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SchemaInfo.swift"; path = "Sources/Support/SchemaInfo.swift"; sourceTree = "<group>"; };
+		45DC5D0BC327616E61A40696 /* DotImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DotImage.swift"; path = "Sources/Views/Components/DotImage.swift"; sourceTree = "<group>"; };
+		B5D1373F46E40865A3B4061E /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StateViews.swift"; path = "Sources/Views/Components/StateViews.swift"; sourceTree = "<group>"; };
+		93B9BB58BB7117C6BA37C8F0 /* StoryBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoryBlockView.swift"; path = "Sources/Views/Components/StoryBlockView.swift"; sourceTree = "<group>"; };
+		6189F83D3BBC5F0D5C02B7EE /* BlogDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogDetailScreen.swift"; path = "Sources/Views/Screens/BlogDetailScreen.swift"; sourceTree = "<group>"; };
+		608D5639E5980E71A37DBC7D /* BlogListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogListScreen.swift"; path = "Sources/Views/Screens/BlogListScreen.swift"; sourceTree = "<group>"; };
+		C96EBE7CC8129FB1C0C45699 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HomeScreen.swift"; path = "Sources/Views/Screens/HomeScreen.swift"; sourceTree = "<group>"; };
+		1681E4F115A6ADBFB0678E3F /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsScreen.swift"; path = "Sources/Views/Screens/SettingsScreen.swift"; sourceTree = "<group>"; };
+		BE0FFDF6E2EC75AA302FAA5D /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Config.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		70F52695820CC9C47E6A4847 = {
+			isa = PBXGroup;
+			children = (
+				A8150624217747F9C3781A84 /* DotCMSDemoApp.swift */,
+				FF3414BFE7AFD83EAB12EBA8 /* AppConfig.swift */,
+				E04229EDBF81853C5D7A113E /* TokenStore.swift */,
+				90B47A5495AAC7F4B119C239 /* DotCMSAPI.graphql.swift */,
+				0AA6CDECF4B267C2FFFA96F3 /* BannerFields.graphql.swift */,
+				D363F34CFCF146637113E843 /* BlogFields.graphql.swift */,
+				8885858CFD59B480556A3565 /* ImageFields.graphql.swift */,
+				8CF52F2BF970F9C9D47EE171 /* WebPageContentFields.graphql.swift */,
+				576865A0F776531E66D65F9B /* BlogDetailQuery.graphql.swift */,
+				D9416173E9167C121161D7F3 /* BlogListQuery.graphql.swift */,
+				EA2C159638045E54DE0ADB46 /* ID.swift */,
+				AD671BE9FA4537CC8C45619B /* JSON.swift */,
+				E95C412BD88EE2FE95AB7832 /* Long.swift */,
+				6AC1924AEE094AB7DE2B01B8 /* ContentBaseType.graphql.swift */,
+				5ADA26F78EBE0FF5200AF526 /* DotAssetBaseType.graphql.swift */,
+				56C64A65D239C1F7E394FBBE /* DotContentlet.graphql.swift */,
+				ACCE21A853C00CCB3F4E780C /* FileBaseType.graphql.swift */,
+				3E16A40726043323B4546226 /* KeyValueBaseType.graphql.swift */,
+				EACEFA510E8CD7C5DAEAD65B /* PageBaseType.graphql.swift */,
+				83794C54446D1B9D39B3EE52 /* PersonaBaseType.graphql.swift */,
+				15A497B6C9719E60330F92D9 /* VanityURLBaseType.graphql.swift */,
+				5FAFA2E13DF1077FC99F21F7 /* WidgetBaseType.graphql.swift */,
+				8FF46C721B440F994EF30DD0 /* Author.graphql.swift */,
+				577432B8105A300AB4E958B6 /* Banner.graphql.swift */,
+				CC510A575B143EF1E694CF35 /* BannerCarousel.graphql.swift */,
+				863CEF2588B2ABDCFEB64245 /* Blog.graphql.swift */,
+				1974F17158EEBD010A9A1220 /* BlogList.graphql.swift */,
+				A64E569636184836990D51B7 /* CallToAction.graphql.swift */,
+				016A1785519A6CC67E924907 /* Doctor.graphql.swift */,
+				F34F46C87048CBF18CF2E217 /* DotAsset.graphql.swift */,
+				CFE1F438EBED6D6F12AAF76B /* DotBinary.graphql.swift */,
+				A0FC6BD51CE894568BFF0A74 /* DotFavoritePage.graphql.swift */,
+				2E9BD5251E75CC5A0F65D07B /* DotStoryBlock.graphql.swift */,
+				193BF00440DC5AFD911E4C63 /* FileAsset.graphql.swift */,
+				A6A5B72EBC4E94A7FDECE8FE /* Forms.graphql.swift */,
+				D144DDA07816AE6C6F25FB38 /* HealthTip.graphql.swift */,
+				DF0A1184C683588D6A275B4A /* Host.graphql.swift */,
+				CA56147161C51FEE29C5E6CB /* Htmlpageasset.graphql.swift */,
+				B7784144D5C0D20B44D2AD39 /* Languagevariable.graphql.swift */,
+				A7C92491704FC581F92E77CD /* Location.graphql.swift */,
+				3E5B13C4A1E8C46885D85D5B /* Persona.graphql.swift */,
+				3528BDB33A0A20FA23B5D049 /* Product.graphql.swift */,
+				EAFEBB1D103F8F0898B6C427 /* Query.graphql.swift */,
+				5E5382F532215BD023A23077 /* Service.graphql.swift */,
+				43CE7D353496FF3B1F4DE5B5 /* Vanityurl.graphql.swift */,
+				2737AD4884A0AE000896B1C2 /* VtlFile.graphql.swift */,
+				A705C7F7A20803FD08A31480 /* WebPageContent.graphql.swift */,
+				F415C9D189D3BEA0AE66ED86 /* SchemaConfiguration.swift */,
+				AFF24E7646477DD322EDBA73 /* SchemaMetadata.graphql.swift */,
+				F68713074A2831CBCC407DBB /* Contentlet.swift */,
+				2AC9ADC6E0B8C0C6FDE2B705 /* StoryBlock.swift */,
+				72E343968AE98CF505D923DF /* CachePolicy.swift */,
+				E7DB31BCE5617329A54934CA /* ContentRepository.swift */,
+				06692B7EB5720B61D1AA33ED /* DotCMSClient.swift */,
+				60E461B7F56683DFF91437FC /* DotCMSError.swift */,
+				96640B37E7C2199A76507DE8 /* DotCMSImageURL.swift */,
+				B290E6E4D1BA12154B9A480B /* LoadState.swift */,
+				B673B02A6AD3F21F261B92E0 /* SchemaInfo.swift */,
+				45DC5D0BC327616E61A40696 /* DotImage.swift */,
+				B5D1373F46E40865A3B4061E /* StateViews.swift */,
+				93B9BB58BB7117C6BA37C8F0 /* StoryBlockView.swift */,
+				6189F83D3BBC5F0D5C02B7EE /* BlogDetailScreen.swift */,
+				608D5639E5980E71A37DBC7D /* BlogListScreen.swift */,
+				C96EBE7CC8129FB1C0C45699 /* HomeScreen.swift */,
+				1681E4F115A6ADBFB0678E3F /* SettingsScreen.swift */,
+				BE0FFDF6E2EC75AA302FAA5D /* Config.plist */,
+				4DBCBA309B6C2F3D3C148D2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DBCBA309B6C2F3D3C148D2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C70535C22995D927B2283DB /* DotCMSDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		978F6675AEE8EC276C7B8D86 /* DotCMSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C9750CCE43119E8A2EE0C5;
+			buildPhases = (
+				BE0E117FCAE65A6FB51A150D,
+				A8AE17D7754CD02205A5280D,
+				39D6E36107CAE66117D4B4F2,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = DotCMSDemo;
+			packageProductDependencies = (
+				E9BF2B2031E721C9543380D5,
+			);
+			productName = DotCMSDemo;
+			productReference = 6C70535C22995D927B2283DB;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244210E48437B6556980A702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = { 978F6675AEE8EC276C7B8D86 = { CreatedOnToolsVersion = 16.0; }; };
+			};
+			buildConfigurationList = B60B2D4DE788D34958E55455;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = ( en, Base );
+			mainGroup = 70F52695820CC9C47E6A4847;
+			packageReferences = (
+				241096C59845DBC6B7A7AD6D,
+			);
+			productRefGroup = 4DBCBA309B6C2F3D3C148D2D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				978F6675AEE8EC276C7B8D86,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE0E117FCAE65A6FB51A150D = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706A2C38F8B5247A173F40C8,
+				CAE3D2EA74EE443A8F2969B2,
+				8F1CF1D887232BBF8756A46E,
+				9BCD19FA64AEEAC62260645C,
+				925B1DF4807DD004658217CE,
+				AEEF5ACA559C7B60721B16CC,
+				942D923FD24B91BD37868889,
+				439BB0D4E2F95169D378CB3A,
+				47B790166FFDD1FFFB37F033,
+				7C4798A3C239724CD3B1F429,
+				C29489936C0DAFED367CCA14,
+				FD5E47B3C45DACB5EBF47D85,
+				EAAAB6F54793F6162BE96D9E,
+				DBA1EF759547D717DBB15BBF,
+				EAC30C3772FD993093FCC93D,
+				83A100D4917FD8EABC8699C7,
+				9BC6EEB13D27DFFF2397D35E,
+				834E765748613CA8E6F78705,
+				D753BE8FED2E56F00B8F5F7A,
+				F2A072DD915B1DF2B2A7079E,
+				708235730E5557E0E5BFDC46,
+				98D4A77A0BB0DA2C424885A7,
+				ED1FD7DEDF464269B88C10DF,
+				56076FC7239B83ECDF75969B,
+				FA42E0703512152FFE99F38D,
+				DFE0CA2D174125718AA1BF4C,
+				5D2E60698CE0DCB0939696FD,
+				43F6319FF41FC93AFADE57E4,
+				883C62A9409DBA8EA6697DA7,
+				2E32049FC59DA3288A449D9E,
+				F823E6D3B5050682717003FC,
+				A5F5ABDAF7D1CE3172F01438,
+				C5740922D5B1BEEC770F0850,
+				1045D711785397C00AD980F3,
+				810C40E073DF6337C2D322A6,
+				787AC08542F862CDE991561A,
+				C6BC3E6F5FE78C1FC9CFDE27,
+				A150294D4D56E448C72377EF,
+				CBAD3AA6711CE807A9F7B9E8,
+				AD3C739FE679A153194D161C,
+				4FCEA74ECDB5185DDB9FF41A,
+				59A9AB14AB3157727566BB55,
+				FAE18DBCA83A30BBA7919344,
+				D31028F2C363509D49715601,
+				882F89CF5F7EFD86938D6E1C,
+				E9A885AE938E2CA80C11C0CA,
+				1E70133844582AC38730A476,
+				83599FFFC75CABBEA6FCC77B,
+				746CED2A72D6050A8525A87B,
+				C24D6A1ED5736A746101F304,
+				14FC8F3DFBF7396D828FD37D,
+				AA70EDD194A4B12EEE6EB2CA,
+				F3164C26E3BC22CCAC66E544,
+				CC5029066DE70862F92834C3,
+				64CD040D83BB329C83215F3F,
+				A0F7FAAB1EDFE665BAD543FD,
+				A3B89B1650812881B028963B,
+				243F1F63F928F2E510A413E1,
+				61365FA90ED7B8AC3C75CADE,
+				67B3DA223D6F285C3F8168B8,
+				9D4EB1B40C462754B5F56D0B,
+				F477712A1ADA097C5BE45AE2,
+				8F0BBD4D2839EF258BBE1F4F,
+				F58324CC81749A886B08E9EC,
+				1B6066AB2CD2016A8DDA02F1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39D6E36107CAE66117D4B4F2 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D395E979E3806C94B3807D1A,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8AE17D7754CD02205A5280D = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9EC8C23BC82089BC26ED07,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C49772F875BF1C0F342BD957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		CA91E1691CC0A231E968B53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		63D89D264CB0408FEC681F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotcms.demo.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5ECB8BEA23D4DB588979C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dotcms.demo.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B60B2D4DE788D34958E55455 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C49772F875BF1C0F342BD957,
+				CA91E1691CC0A231E968B53E,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25C9750CCE43119E8A2EE0C5 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63D89D264CB0408FEC681F8E,
+				A5ECB8BEA23D4DB588979C66,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		241096C59845DBC6B7A7AD6D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9BF2B2031E721C9543380D5 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 241096C59845DBC6B7A7AD6D;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 244210E48437B6556980A702;
+}

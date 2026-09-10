@@ -27,6 +27,7 @@ struct BlogDetailScreen: View {
     /// while the full body loads.
     let blog: Contentlet
     @State private var model = BlogDetailModel()
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         ScrollView {
@@ -88,5 +89,8 @@ struct BlogDetailScreen: View {
         .navigationBarTitleDisplayMode(.inline)
         .refreshable { await model.load(urlTitle: blog.urlTitle) }
         .task { if case .idle = model.state { await model.load(urlTitle: blog.urlTitle) } }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active { Task { await model.load(urlTitle: blog.urlTitle) } }
+        }
     }
 }

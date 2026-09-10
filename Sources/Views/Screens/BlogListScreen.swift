@@ -21,6 +21,12 @@ final class BlogListModel {
 
 struct BlogListScreen: View {
     @State private var model = BlogListModel()
+    @Environment(\.scenePhase) private var scenePhase
+
+    /// Changes whenever the view appears or the app returns to the foreground,
+    /// driving .task(id:) to refetch. Content published while the app was
+    /// backgrounded then shows up without a manual pull-to-refresh.
+    @State private var refreshTrigger = UUID()
 
     var body: some View {
         Group {
@@ -53,7 +59,15 @@ struct BlogListScreen: View {
         .navigationTitle("Blog")
         .navigationDestination(for: Contentlet.self) { BlogDetailScreen(blog: $0) }
         .refreshable { await model.load() }
-        .task { if case .idle = model.state { await model.load() } }
+        // Reload on every appearance, not just the first. Switching tabs during a
+        // demo must show content published moments ago; the .demo cache TTL makes
+        // this cheap, and a stale list reads as "the app is broken".
+        .task(id: refreshTrigger) { await model.load() }
+        .onAppear { refreshTrigger = UUID() }
+        .onChange(of: scenePhase) { _, phase in
+            // Content published while the app was backgrounded appears on return.
+            if phase == .active { refreshTrigger = UUID() }
+        }
     }
 }
 

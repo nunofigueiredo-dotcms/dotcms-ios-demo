@@ -34,6 +34,12 @@ struct PageScreen: View {
 
     @State private var model: PageModel
     @Environment(\.horizontalSizeClass) private var sizeClass
+    @Environment(\.scenePhase) private var scenePhase
+
+    /// Changes whenever the view appears or the app returns to the foreground,
+    /// driving .task(id:) to refetch. Content published while the app was
+    /// backgrounded then shows up without a manual pull-to-refresh.
+    @State private var refreshTrigger = UUID()
 
     init(uri: String, fallbackTitle: String) {
         self.uri = uri
@@ -68,7 +74,12 @@ struct PageScreen: View {
         }
         .navigationTitle(model.state.value?.title ?? fallbackTitle)
         .refreshable { await model.load() }
-        .task { if case .idle = model.state { await model.load() } }
+        .task(id: refreshTrigger) { await model.load() }
+        .onAppear { refreshTrigger = UUID() }
+        .onChange(of: scenePhase) { _, phase in
+            // Content published while the app was backgrounded appears on return.
+            if phase == .active { refreshTrigger = UUID() }
+        }
     }
 }
 

@@ -18,7 +18,8 @@ struct DotImage: View {
                 identifier: identifier,
                 fieldName: fieldName,
                 fallbackPath: fallbackPath,
-                width: geo.size.width
+                width: geo.size.width,
+                languageID: AppConfig.shared.languageID
             )
             AsyncImage(url: url, transaction: .init(animation: .easeIn(duration: 0.2))) { phase in
                 switch phase {

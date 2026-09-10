@@ -75,6 +75,7 @@
 		F477712A1ADA097C5BE45AE2 /* BlogDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6189F83D3BBC5F0D5C02B7EE; };
 		8F0BBD4D2839EF258BBE1F4F /* BlogListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D5639E5980E71A37DBC7D; };
 		F58324CC81749A886B08E9EC /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96EBE7CC8129FB1C0C45699; };
+		14E41F29A2E02FA0448E711F /* PageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BDB302241ACA7940E81A0; };
 		1B6066AB2CD2016A8DDA02F1 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681E4F115A6ADBFB0678E3F; };
 		D395E979E3806C94B3807D1A /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0FFDF6E2EC75AA302FAA5D; };
 		EF9EC8C23BC82089BC26ED07 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = E9BF2B2031E721C9543380D5; };
@@ -151,6 +152,7 @@
 		6189F83D3BBC5F0D5C02B7EE /* BlogDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogDetailScreen.swift"; path = "Sources/Views/Screens/BlogDetailScreen.swift"; sourceTree = "<group>"; };
 		608D5639E5980E71A37DBC7D /* BlogListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BlogListScreen.swift"; path = "Sources/Views/Screens/BlogListScreen.swift"; sourceTree = "<group>"; };
 		C96EBE7CC8129FB1C0C45699 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HomeScreen.swift"; path = "Sources/Views/Screens/HomeScreen.swift"; sourceTree = "<group>"; };
+		809BDB302241ACA7940E81A0 /* PageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PageScreen.swift"; path = "Sources/Views/Screens/PageScreen.swift"; sourceTree = "<group>"; };
 		1681E4F115A6ADBFB0678E3F /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsScreen.swift"; path = "Sources/Views/Screens/SettingsScreen.swift"; sourceTree = "<group>"; };
 		BE0FFDF6E2EC75AA302FAA5D /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Config.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +230,7 @@
 				6189F83D3BBC5F0D5C02B7EE /* BlogDetailScreen.swift */,
 				608D5639E5980E71A37DBC7D /* BlogListScreen.swift */,
 				C96EBE7CC8129FB1C0C45699 /* HomeScreen.swift */,
+				809BDB302241ACA7940E81A0 /* PageScreen.swift */,
 				1681E4F115A6ADBFB0678E3F /* SettingsScreen.swift */,
 				BE0FFDF6E2EC75AA302FAA5D /* Config.plist */,
 				4DBCBA309B6C2F3D3C148D2D /* Products */,
@@ -366,6 +369,7 @@
 				F477712A1ADA097C5BE45AE2,
 				8F0BBD4D2839EF258BBE1F4F,
 				F58324CC81749A886B08E9EC,
+				14E41F29A2E02FA0448E711F,
 				1B6066AB2CD2016A8DDA02F1,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

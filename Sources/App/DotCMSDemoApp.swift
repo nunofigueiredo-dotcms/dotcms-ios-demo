@@ -23,9 +23,16 @@ struct RootView: View {
                 .tabItem { Label("Blog", systemImage: "text.alignleft") }
                 .tag(1)
 
+            NavigationStack {
+                PageScreen(uri: "/about-us/index", fallbackTitle: "About")
+                    .navigationDestination(for: Contentlet.self) { BlogDetailScreen(blog: $0) }
+            }
+            .tabItem { Label("About", systemImage: "info.circle") }
+            .tag(2)
+
             NavigationStack { SettingsScreen() }
                 .tabItem { Label("Settings", systemImage: "gearshape") }
-                .tag(2)
+                .tag(3)
         }
     }
 }

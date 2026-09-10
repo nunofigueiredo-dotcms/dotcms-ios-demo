@@ -110,6 +110,34 @@ number rather than becoming a blank screen at runtime.
 Unknown content types render a visible "No component for type X" placeholder
 rather than being skipped silently.
 
+## Screens
+
+| Tab | Source | Notes |
+|---|---|---|
+| Home | Page API `/index` | Layout + component registry |
+| Blog | `BlogCollection` | Listing, then detail by `urlTitle` |
+| About | Page API `/about-us/index` | Same `PageScreen` as Home, different URI |
+| Settings | — | Instance, cache TTL, registry, schema hash |
+
+Home and About are the *same view*: `PageScreen(uri:fallbackTitle:)`. Adding
+another page asset to the app is one line, with no new rendering code.
+
+## Tests
+
+```bash
+./Tests/run-tests.sh
+```
+
+No Xcode needed — `swiftc` only. Covers the two failure modes that actually
+bit during development:
+
+- **StoryBlock parsing** against a real captured body, in both the plain and
+  Apollo `AnyHashable`-wrapped shapes. Guards the bug where Apollo's default
+  `typealias JSON = String` made blog detail fail with `couldNotConvert`.
+- **Nullability degradation**: a contentlet with every field stripped must
+  still yield a non-empty title, a stable `id` (a fresh `UUID()` would break
+  SwiftUI `ForEach` diffing), and no divide-by-zero on image aspect ratios.
+
 ## Architecture notes
 
 - **All content fields are optional** in the app layer, even where the schema
@@ -121,6 +149,14 @@ rather than being skipped silently.
   the performance story. Toggle in Settings.
 - **Images** are always requested resized. The raw demo assets are up to
   5184x3456 / 2.2 MB; `/dA/{id}/image/{width}w/{quality}q` returns ~18 KB WebP.
+- **Unknown content types and unknown StoryBlock nodes both render visible,
+  labelled placeholders** rather than being skipped. The About Us page contains
+  a `gridBlock` node the app does not implement, so that placeholder is
+  demonstrable on real content.
+- **`sortBy` fails silently.** dotCMS returns zero results with no error when
+  `sortBy` names a field the index cannot sort — `Blog.modDate` does this while
+  `Blog.publishDate` works. The blog listing falls back to an unsorted query and
+  sorts client-side, so a demo degrades to unordered posts, never a blank list.
 
 ## Trade-off: no backend-for-frontend
 

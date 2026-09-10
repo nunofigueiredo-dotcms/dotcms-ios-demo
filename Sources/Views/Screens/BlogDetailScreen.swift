@@ -86,6 +86,7 @@ struct BlogDetailScreen: View {
         }
         .navigationTitle(blog.displayTitle)
         .navigationBarTitleDisplayMode(.inline)
-        .task { await model.load(urlTitle: blog.urlTitle) }
+        .refreshable { await model.load(urlTitle: blog.urlTitle) }
+        .task { if case .idle = model.state { await model.load(urlTitle: blog.urlTitle) } }
     }
 }

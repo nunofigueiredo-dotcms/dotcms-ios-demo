@@ -30,7 +30,14 @@ struct Contentlet: Identifiable, Hashable, Sendable {
     /// Fields not mapped above, so an unknown type can still show something.
     let extra: [String: String]
 
-    var id: String { identifier ?? inode ?? UUID().uuidString }
+    /// Stable across accesses. A fresh UUID() here would give SwiftUI a new
+    /// identity on every render pass, breaking ForEach diffing and animations
+    /// for any contentlet whose identifier and inode were both stripped.
+    var id: String {
+        if let identifier, !identifier.isEmpty { return identifier }
+        if let inode, !inode.isEmpty { return inode }
+        return "\(contentType)-\(title ?? "")-\(urlTitle ?? "")"
+    }
 
     /// Title safe to display; never empty.
     var displayTitle: String {

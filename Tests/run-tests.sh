@@ -11,6 +11,10 @@ echo "### StoryBlock parser"
 if ./Tests/run-storyblock-tests.sh; then echo "  PASS"; else echo "  FAIL"; FAILED=1; fi
 
 echo
+echo "### Custom scalar round-trip (Apollo DataDict force cast)"
+if ./Tests/run-scalar-tests.sh >/dev/null 2>&1; then echo "  PASS"; else echo "  FAIL"; FAILED=1; fi
+
+echo
 echo "### Nullability degradation"
 WORK="$(mktemp -d)"; trap 'rm -rf "${WORK}"' EXIT
 cp Sources/Models/Contentlet.swift Sources/Models/StoryBlock.swift "${WORK}/"

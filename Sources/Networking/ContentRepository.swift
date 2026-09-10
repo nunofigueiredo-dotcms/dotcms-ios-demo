@@ -77,10 +77,40 @@ struct ContentRepository {
         guard let first = (data.blogCollection ?? []).compactMap({ $0 }).first else {
             throw DotCMSError.notFound
         }
+        // Read the body defensively. Apollo's generated getter force-casts the
+        // stored value, so anything unexpected there is a crash, not a nil —
+        // pull the raw dictionary out of __data instead of trusting the getter.
         return Self.contentlet(
             from: first.fragments.blogFields,
-            bodyJSON: first.body?.json?.jsonObject
+            bodyJSON: Self.storyBlockJSON(from: first)
         )
+    }
+
+    /// Extracts the StoryBlock body without going through the generated
+    /// force-casting accessor.
+    ///
+    /// `DataDict`'s subscript does `_data[key] as! T`, so any value it did not
+    /// expect aborts the process instead of returning nil. Reading the
+    /// underlying storage directly keeps a surprising shape recoverable.
+    private static func storyBlockJSON(
+        from blog: DotCMSAPI.BlogDetailQuery.Data.BlogCollection
+    ) -> Any? {
+        let storage: [String: AnyHashable] = blog.__data._data
+        guard let bodyValue = storage["body"] else { return nil }
+
+        // `body` is itself a selection set, stored as its own dictionary.
+        let bodyDict: [String: AnyHashable]?
+        if let dict = bodyValue.base as? [String: AnyHashable] {
+            bodyDict = dict
+        } else if let nested = bodyValue.base as? DataDict {
+            bodyDict = nested._data
+        } else {
+            bodyDict = nil
+        }
+
+        guard let json = bodyDict?["json"] else { return nil }
+        if let scalar = json.base as? DotCMSAPI.JSON { return scalar.jsonObject }
+        return DotCMSAPI.JSON.unwrapValue(json)
     }
 
     // MARK: - Mapping

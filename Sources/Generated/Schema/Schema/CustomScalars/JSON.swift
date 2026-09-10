@@ -26,13 +26,22 @@ extension DotCMSAPI {
 
     var _jsonValue: JSONValue { raw }
 
-    var _asAnyHashable: AnyHashable { raw }
+    // NOTE: do NOT override _asAnyHashable to return `raw`.
+    //
+    // Apollo's DataDict stores whatever _asAnyHashable returns and reads it
+    // back with a FORCE cast (`_data[key] as! T`). Returning the raw value
+    // stores a bare Dictionary, so the cast back to DotCMSAPI.JSON aborts with
+    // swift_dynamicCastFailure — a SIGABRT the moment a blog detail loads from
+    // the normalized cache. The default Hashable conformance stores `self`,
+    // which is what the force cast expects.
 
     /// Foundation-typed representation for `JSONSerialization`-style parsing.
     ///
     /// Apollo hands back nested values wrapped in `AnyHashable`, which do not
     /// cast directly to `[String: Any]`, so unwrap the graph recursively.
     var jsonObject: Any? { Self.unwrap(raw) }
+
+    static func unwrapValue(_ value: Any?) -> Any? { unwrap(value) }
 
     private static func unwrap(_ value: Any?) -> Any? {
       guard let value else { return nil }
